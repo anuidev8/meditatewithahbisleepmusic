@@ -1,0 +1,100 @@
+
+body{
+    padding: 0;
+    margin:0
+}
+.box {
+    margin: 0;
+    height: 100vh;
+    transition: all .8s ease;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #010000;
+    background-image: url('/bg.gif'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 120px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+#controls button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #15bbea;
+}
+
+#music-player {
+    margin: 20px 0;
+}
+
+#sound-effects button {
+  
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#sound-effects{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+#sound-effects p{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    transform: translateY(2px);
+}
+
+#sound-effects img{
+    width: 90px;
+    height: 90px;
+    position:absolute;
+    top:-2px;
+    left: -8px;
+    object-fit: cover;
+}
+
+
+button{
+    
+    background-color: transparent;
+    border:none;
+}
+figure{
+    margin: 0;
+}
+
+ figure{
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+}
+
+.active figure{
+    border: 2px solid #15bbea;
+}
+
+#sound-effects .active p{
+    color: #15bbea;
+}
+
