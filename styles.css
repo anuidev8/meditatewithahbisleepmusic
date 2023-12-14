@@ -1,7 +1,11 @@
 
 body{
     padding: 0;
-    margin:0
+    margin:0;
+    background-color: #081026;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 .box {
     margin: 0;
@@ -10,7 +14,7 @@ body{
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: #010000;
+    background-color: #081026;
    /*  background-image: url('/bg.gif'); 
     background-size: cover;
     background-position: center;
@@ -50,7 +54,7 @@ h1 {
 #sound-effects{
     display: flex;
     position: relative;
-    justify-content: space-around;
+   
 }
 
 
@@ -68,7 +72,7 @@ h1 {
     object-fit: cover;
    /*  background-color: red; */
     border-radius: 50%;
-    transform: translateY(7px);
+   
     
     
 }
@@ -180,7 +184,7 @@ figure{
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    border: 2px solid #15bbea;
+   /*  border: 2px solid #15bbea; */
     color: #15bbea;
     border-radius: 5px;
     cursor: pointer;
@@ -192,9 +196,7 @@ figure{
     opacity: 0;
 }
 
-#musicMenu .menu-option img{
-    transform: translateY(10px);
-}
+
 #musicMenu .musicTrack:checked + label {
     background-color: #ffffff;
     border: none;
@@ -215,6 +217,8 @@ figure{
     z-index: 100;
 }
 
+
+
 /* Class to show musicMenu */
 .show {
     transform: translateY(0);
@@ -228,4 +232,181 @@ figure{
 .sound-box input {
     width: 4rem;
 }
+
+
+
+
+
+/* Existing styles */
+
+.screen {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden-app {
+    display: none;
+}
+
+.show-app {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* LIST */
+
+#musicList{
+    margin: 2rem;
+    padding: 0;
+}
+
+#musicList li {
+    height: 9rem;
+    
+}
+
+#musicList li button{
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: medium;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    opacity: 0;
+}
+
+#musicList li button svg {
+    margin-top: 1rem;
+}
+
+.music-list-audio{
+    position: relative;
+    margin-top: 1.2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .5rem;
+    overflow: hidden;
+    filter: contrast(-40%);
+    border: 1px solid white;
+}
+.music-list-audio-1{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702536537/audios/bg/9_rjzerz.png);
+}
+
+.music-list-audio-2{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702536426/audios/bg/8_pvaajv.png);
+}
+
+.music-list-audio-3{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702536145/audios/bg/7_x72dir.png);
+}
+
+.music-list-audio-4{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702536028/audios/bg/1_fivi7q.png);
+}
+.music-list-audio-5{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702537474/audios/bg/2_nyeole.png);
+}
+.music-list-audio-6{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702536758/audios/bg/5_bgmpv9.png);
+}
+.music-list-audio-7{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702537213/audios/bg/3_zkyivk.png);
+}
+
+.music-list-audio-8{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702536657/audios/bg/4_oqb884.png);
+}
+.music-list-audio-9{
+    background-image: url(https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702537213/audios/bg/3_zkyivk.png);
+}
+
+/*  .music-list-audio::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    background-color: rgba(157, 169, 247, 0.323);
+    width: 100%;
+    height: 100%;
+
+}  */
+
+.screen-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 1.8rem;
+}
+
+#musicSelectionScreen{
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#welcomeScreen button{
+background-color: rgb(255, 170, 0);
+padding: 1rem;
+border-radius: .5rem;
+font-size: 1.1rem;
+}
+
+
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    padding-left: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    
+    
+  }
+
+
 

@@ -4,19 +4,44 @@ const menuOptions = [
         id: "rainAudio",
         track: "rainAudio",
         label: "Rain",
-        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702248157/audios/1_iljszo.png"
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702508479/audios/icons/1_ntd34p.png"
     },
     {
         id: "cricketsAudio",
         track: "cricketsAudio",
         label: "Crickets",
-        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702308893/audios/2_ti0t8p.png",
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702509247/audios/icons/8_cslz5j.png",
     },
     {
         id: "fireAudio",
         track: "fireAudio",
         label: "Fire",
-        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702308741/audios/4_dwiztb.png",
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702509295/audios/icons/4_kolblb.png",
+    },
+    { id: 'ringAudio', label: 'Ring', track: 'ringAudio', src: 'https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702509663/audios/sounds/service-bell-ring-14610_shzjhe.mp3', imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702509528/audios/sounds/6_xolypk.png", },
+    {
+        id: "bellAudio",
+        track: "bellAudio",
+        label: "Bells",
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702539357/audios/icons/7_rgwsr8.png",
+    },
+    {
+        id: "thunderAudio",
+        track: "thunderAudio",
+        label: "Thunders",
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702539337/audios/icons/3_a1etkv.png",
+    },
+    {
+        id: "windAudio",
+        track: "windAudio",
+        label: "Wind",
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702539346/audios/icons/5_a5smqk.png",
+    },
+    {
+        id: "starsAudio",
+        track:"starsAudio",
+        label: "Stars",
+        imageUrl: "https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702539329/audios/icons/2_e7wbnx.png",
     },
     // Add more options as needed
 ];

@@ -9,39 +9,143 @@
 </head>
 
 <body>
-    <main class="box">
-        <audio id="environmentAudio"
-            src="https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702245684/audios/backgorund_n4vvhm.mp3" autoplay
-            loop preload="auto"></audio> 
-
-        <header>
-            <div>
-                <button id="menuIcon">☰ Menu</button>
+    <main>
+        <div id="welcomeScreen" class="screen">
+            <div class="screen-box">
+                <figure class="logo">
+                    <img alt="midatate with ahbi"
+                        src="https://res.cloudinary.com/dnmjmjdsj/image/upload/v1702506419/audios/logo_vsw2tl.png"
+                        width="270" height="270" />
+                </figure>
+                <button onclick="changeScreen('musicSelectionScreen')">Start the Experience</button>
             </div>
-            <h1>Sleep Music</h1> 
-            <!-- Music Selection Menu -->
-            <div id="musicMenu" class="hidden">
-                <button style="color: white;" id="menuCloseIcon">☰ Menu</button>
-                <h3 style="color: white; font-size: 1.3rem;"  class="text-choose">Choose your sleep Musicsound</h3>
-                <div id="music-menu-container" class="music-menu-container"></div>
-                
-                
+        </div>
+        <div id="musicSelectionScreen" class="screen hidden-app">
+
+            <ul id="musicList">
+                <li class="music-list-audio music-list-audio-1">
+                    <button
+                        onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702486267/audios/bg/MWAA0015_and0v7.mp3`)">
+                        Body Healing solfeggio frequencies
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                            height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                            </path>
+                        </svg>
+                    </button>
+                </li>
+                <li class="music-list-audio music-list-audio-2"><button
+                        onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702505835/audios/bg/MWAA0016_1_z6qzdz.mp3`)">Sleep
+                        Music with Solfeggio Frequencies
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                            height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                            </path>
+                        </svg> </button>`</li>
+
+                        <li class="music-list-audio music-list-audio-3"><button
+                            onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702508030/audios/MWAA0032_1_vdhyfa.mp3`)">REDUCE ANXIETY ☯
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                </path>
+                            </svg> </button>`</li>
+
+                            <li class="music-list-audio music-list-audio-4"><button
+                                onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702508866/audios/MWAA0037_1_zzpa2p.mp3`)">Body Healing solfeggio frequencies
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                    height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                    </path>
+                                </svg> </button>`</li>
+
+                                <li class="music-list-audio music-list-audio-5"><button
+                                    onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702509830/audios/bg/MWAA0043_1_zo2idb.mp3`)">Sleep Soundly with Full Body Healing
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                        height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                        </path>
+                                    </svg> </button>`</li>
+
+                                    <li class="music-list-audio music-list-audio-6"><button
+                                        onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702535257/audios/bg/MWAA0058_vfe3as.mp3`)">Deep Sleep | Full Body Healing
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                            height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                            </path>
+                                        </svg> </button>`</li>
+
+                                        <li class="music-list-audio music-list-audio-7"><button
+                                            onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702535686/audios/bg/MWAA0066_mhcerv.mp3`)">7
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                                height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                                </path>
+                                            </svg> </button>`</li>
+
+                                            <li class="music-list-audio music-list-audio-8"><button
+                                                onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702535809/audios/bg/MWAA0070_hxj9s3.mp3`)">8
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                                    height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                                    </path>
+                                                </svg> </button>`</li>
+                                                <li class="music-list-audio music-list-audio-9"><button
+                                                    onclick="playSelectedMusic(`https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702535938/audios/bg/MWAA0081_rt5pjf.mp3`)">9
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                                        height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                                        </path>
+                                                    </svg> </button>`</li>
+
                 <!-- Add more music tracks as needed -->
+            </ul>
+
+        </div>
+        <div id="mainApp" class="box screen hidden-app">
+            <!-- <audio id="environmentAudio"
+            src="https://res.cloudinary.com/dnmjmjdsj/video/upload/v1702245684/audios/backgorund_n4vvhm.mp3" autoplay
+            loop preload="auto"></audio>  -->
+
+            <header>
+                <div  style="position: relative;background-color: rgba(20, 20, 70, 0.457);">
+                    <button id="homeIcon"  style="position: absolute;left:0;top: 20%;"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg></button>
+                    <button id="menuIcon">☰ Menu</button>
+                </div>
+                <h1>Sleep Music</h1>
+                <!-- Music Selection Menu -->
+                <div id="musicMenu" class="hidden">
+                    <button style="color: white;" id="menuCloseIcon">☰ Menu</button>
+                    <h3 style="color: white; font-size: 1.3rem;" class="text-choose">Choose your sleep Musicsound</h3>
+                    <div id="music-menu-container" class="music-menu-container"></div>
+
+
+                    <!-- Add more music tracks as needed -->
+                </div>
+
+            </header>
+
+            <!-- Container for Sound Effects -->
+            <div id="sound-effects" class="slides">
+
             </div>
 
-        </header>
-
-        <!-- Container for Sound Effects -->
-<div id="sound-effects">
-    
-</div>
-
-<!-- Audio Elements -->
-<!-- <audio id="musicPlayer" preload="auto"></audio> -->
-        <figure class="wheel">
-            <img src="./wheel.png" width="300" height="300" />
-        </figure>
-
+            <!-- Audio Elements -->
+            <!-- <audio id="musicPlayer" preload="auto"></audio> -->
+            <figure class="wheel">
+                <img src="./wheel.png" width="300" height="300" />
+            </figure>
+        </div>
+        <script src="app.js"></script>
         <script src="index.js"></script>
         <script src="music.js"></script>
     </main>
